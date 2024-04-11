@@ -1,0 +1,78 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3em;
+    font-weight: 900;
+    margin: 0.8em 0;
+}
+
+.book-cards {
+    background: rgba(0, 0, 0, 0.15);
+    padding: 2em 2.5em;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    overflow: hidden;
+}
+
+.card {
+    height: 300px;
+    width: 250px;
+    background: rgb(255, 237, 230);
+    flex-shrink: 0;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+}
+
+.card > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.6em 0;
+    border-bottom: 3px solid brown;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.card > button {
+    padding: 6px 10px;
+    align-self: end;
+    margin: 5px 10px;
+    border-radius: 50%;
+    background: red;
+    font-weight: 900;
+}
+
+.card div:first-of-type{
+    margin-top: 10px;
+    font-size: 1.4em;
+    font-weight: 900;
+}
+
+.add-btn {
+    padding: 20px 40px;
+    background: brown;
+    border-radius: 20px;
+    align-self: center;
+    margin: 50px;
+    font-size: 1.5em;
+}
+
