@@ -9,6 +9,29 @@
 <body>
     <div class="header">Library</div>
     <div class="book-cards"></div>
+    <dialog class="dialog">
+        <form action="">
+            <h2>Let's add new book</h2>
+            <div class="inputs">
+                <div class="meat-input">
+                    <label for="title">Title *</label>
+                    <input class="title-input" id="title" name="title" type="text" required>
+                    <label for="author">Author *</label>
+                    <input class="author-input" id="author" name="author" type="text" required>
+                    <label for="pages">Pages *</label>
+                    <input class="pages-input" id="pages" name="pages" type="text" required>
+                </div>
+                <div class="check">
+                    <label for="read">Read</label>
+                    <input id="read" name="read" type="checkbox">
+                </div>
+                <div class="sub-btn">
+                    <button class="confirm-btn">Confirm</button>
+                    <button class="modal-end">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </dialog>
     <button class="add-btn">NEW BOOK</button>
     <script src="script.js"></script>
 </body>

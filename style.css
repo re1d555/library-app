@@ -25,12 +25,13 @@ body {
     justify-content: center;
     gap: 70px;
     overflow: hidden;
+    height: 302px;
 }
 
 .card {
     height: 300px;
     width: 250px;
-    background: rgb(255, 237, 230);
+    background: #FFF7DF;
     flex-shrink: 0;
     border-radius: 30px;
     display: flex;
@@ -57,7 +58,7 @@ button {
     align-self: end;
     margin: 5px 10px;
     border-radius: 50%;
-    background: red;
+    background: brown;
     font-weight: 900;
 }
 
@@ -76,3 +77,63 @@ button {
     font-size: 1.5em;
 }
 
+::backdrop {
+    background: rgba(0, 0, 0, 0.45);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 65px;
+    font-size: 1.2em;
+}
+
+.sub-btn > button {
+    background: black;
+    padding: 15px 35px;
+    border-radius: 25px;
+    font-size: 1.1em;
+}
+
+.sub-btn {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.check {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.meat-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.meat-input > input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    outline: 2px solid #c2c4c7;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.meat-input > input:valid {
+    outline: 2px solid #748f86;
+    border: none;
+}
+
+.meat-input > input:invalid {
+    outline: 2px solid rgb(207, 141, 163);
+}
+
+.dialog {
+    border-radius: 25px;
+    border: none;
+}
