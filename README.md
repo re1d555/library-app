@@ -1,1 +1,1 @@
-Practice with objects and prototype.
+Practice with objects and prototype + dialog tag.

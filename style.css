@@ -20,9 +20,9 @@ body {
 
 .book-cards {
     background: rgba(0, 0, 0, 0.15);
-    padding: 2em 2.5em;
+    padding: 2em 1.5em;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 70px;
     overflow: hidden;
     height: 302px;
@@ -30,21 +30,22 @@ body {
 
 .card {
     height: 300px;
-    width: 250px;
+    width: 350px;
     background: #FFF7DF;
     flex-shrink: 0;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
-    border: 1px solid gray;
+    border: 1px solid rgb(189, 189, 189);
+    overflow: hidden;
 }
 
 .card > div {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1.6em 0;
-    border-bottom: 3px solid brown;
+    margin: 20px 0;
+    border-bottom: 1px solid brown;
 }
 
 button {
@@ -63,7 +64,6 @@ button {
 }
 
 .card div:first-of-type{
-    margin-top: 10px;
     font-size: 1.4em;
     font-weight: 900;
 }
@@ -136,4 +136,8 @@ form {
 .dialog {
     border-radius: 25px;
     border: none;
+}
+
+label {
+    margin-left: 15px;
 }
