@@ -1,12 +1,10 @@
-html {
-    height: 100%;
-}
-
 body {
     background: white;
     margin: 0;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
 }
 
 .header {
@@ -29,7 +27,7 @@ body {
 }
 
 .card {
-    height: 300px;
+    height: 310px;
     width: 350px;
     background: #FFF7DF;
     flex-shrink: 0;
@@ -48,24 +46,41 @@ body {
     border-bottom: 1px solid brown;
 }
 
+.card > div:first-of-type {
+    height: 67px;
+    margin: 0;
+}
+
 button {
     border: none;
     cursor: pointer;
     color: white;
 }
 
-.card > button {
+.card > button:first-of-type {
     padding: 6px 10px;
     align-self: end;
-    margin: 5px 10px;
+    margin: 7px 12px;
     border-radius: 50%;
     background: brown;
     font-weight: 900;
 }
 
-.card div:first-of-type{
+.card > button:last-of-type {
+    border-radius: 10px;
+    padding: 7px 14px;
+    background: brown;
+    align-self: end;
+    margin: 8px 10px;
+}
+
+.card div:first-of-type {
     font-size: 1.4em;
     font-weight: 900;
+}
+
+.card div:last-of-type {
+    margin-bottom: 0;
 }
 
 .add-btn {
@@ -92,7 +107,7 @@ form {
 .sub-btn > button {
     background: black;
     padding: 15px 35px;
-    border-radius: 25px;
+    border-radius: 15px;
     font-size: 1.1em;
 }
 
@@ -119,7 +134,7 @@ form {
     padding: 10px;
     outline: 2px solid #c2c4c7;
     border: none;
-    border-radius: 25px;
+    border-radius: 10px;
     font-size: 1em;
     margin-bottom: 10px;
 }
@@ -140,4 +155,19 @@ form {
 
 label {
     margin-left: 15px;
+}
+
+.footer {
+    margin-top: auto;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.15);
+    color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
+
+::placeholder {
+    color: rgb(199, 199, 199);
 }
